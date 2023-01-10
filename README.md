@@ -7,7 +7,7 @@ Welcome to my blog! This blog is built using the Next.js framework and is deploy
 Clone the repository:
 
 ```
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/mocomich/my-blog.git
 ```
 
 Install the dependencies:
