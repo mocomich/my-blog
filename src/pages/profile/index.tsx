@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import { DefaultLayout } from "@/components/Layouts/DefaultLayout";
 import { Spacer } from "@/components/atoms/Spacer";
+import { DefaultLayout } from "@/components/layouts/DefaultLayout";
 import { pageTitle } from "@/components/meta";
 import { HeadGroup } from "@/components/molecules/HeadGroup";
 import { NextPageWithLayout } from "@/types/next";

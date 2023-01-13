@@ -3,7 +3,7 @@ import hljs from "highlight.js";
 import ErrorPage from "next/error";
 import { useRouter } from "next/router";
 
-import { DefaultLayout } from "@/components/Layouts/DefaultLayout";
+import { DefaultLayout } from "@/components/layouts/DefaultLayout";
 import { PostDetailTemplate } from "@/components/templates/PostDetailTemplate";
 import { client } from "@/lib/client";
 import { NextPageWithLayout } from "@/types/next";

@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 
-import { DefaultLayout } from "@/components/Layouts/DefaultLayout";
+import { DefaultLayout } from "@/components/layouts/DefaultLayout";
 import { HomeTemplate } from "@/components/templates/HomeTemplate";
 import { client } from "@/lib/client";
 import { NextPageWithLayout } from "@/types/next";
