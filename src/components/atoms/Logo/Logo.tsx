@@ -1,3 +1,3 @@
 export const Logo = () => {
-  return <h1 className="text-3xl font-bold dark:text-white">Vinyl</h1>;
+  return <h1 className="text-2xl font-bold dark:text-white md:text-3xl">Vinyl</h1>;
 };
