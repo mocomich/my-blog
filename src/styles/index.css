@@ -20,6 +20,6 @@
 
     @apply prose-strong:font-bold prose-strong:text-gray-900 dark:prose-strong:text-gray-50;
 
-    @apply marker:text-gray-800 dark:marker:text-gray-400;
+    @apply marker:text-gray-800 dark:marker:text-gray-300;
   }
 }
