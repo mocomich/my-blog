@@ -8,6 +8,19 @@ import { PostsData } from "@/types/post";
 
 type Props = PostsData;
 
+// TODO: zodをつかって検証するようにしたい、もしくはラップしたgetメソッド作っちゃうか、型生成とかもschemaからするよう修正
+// const postSchema = z.object({
+//   body: z.string().optional(),
+//   domain: z.string(),
+//   excerpt: z.string(),
+//   id: z.string(),
+//   publishedAt: z.string(),
+//   tags: z.array(z.string()),
+//   title: z.string(),
+//   updatedAt: z.string(),
+//   url: z.string(),
+// });
+
 export const getStaticProps: GetStaticProps = async () => {
   const data = await client.get({ endpoint: "blogs" });
 
@@ -19,7 +32,9 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Home: NextPageWithLayout<Props> = ({ posts }) => {
-  return <HomeTemplate posts={posts} />;
+  // Currentは直近3つだけの記事
+  const currentPosts = posts.slice(0, 3);
+  return <HomeTemplate posts={currentPosts} />;
 };
 
 Home.getLayout = DefaultLayout;
