@@ -11,7 +11,7 @@
     @apply prose-h3:mt-8 prose-h3:text-xl;
     @apply prose-h4:mt-8;
 
-    @apply prose-a:text-blue-400 prose-a:no-underline prose-a:visited:text-indigo-400;
+    @apply prose-a:break-words prose-a:text-blue-400 prose-a:no-underline prose-a:visited:text-indigo-400;
 
     @apply prose-blockquote:text-gray-400;
 
