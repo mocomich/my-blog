@@ -21,7 +21,5 @@ export const useDarkMode = () => {
     [setState, toggleDarkMode, isDarkMode]
   );
 
-  console.log(isDarkMode, state);
-
   return { isDarkMode, toggle: persistToggle };
 };
