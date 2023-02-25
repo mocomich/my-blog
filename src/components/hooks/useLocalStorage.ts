@@ -5,7 +5,9 @@ type Props<T> = {
   key: string;
 };
 
-export const usePersistState = <T>({ key, initialValue }: Props<T>) => {
+type Result<T> = readonly [T, (v: T) => void];
+
+export const usePersistState = <T>({ key, initialValue }: Props<T>): Result<T> => {
   const getItemFromStorage = <T>(key: string, defaultValue?: T) => {
     try {
       const val = JSON.parse(localStorage.getItem(key) + "");
