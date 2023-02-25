@@ -30,8 +30,8 @@ export const PostDetailTemplate: React.FC<Props> = ({ post, body }) => {
       <Spacer axis="VERTICAL" size={16} />
       <PostBody body={body} />
       <Spacer axis="VERTICAL" size={16} />
-      <Button color="primary" onClick={backToPreviousPage} size="large">
-        Go Back
+      <Button color="primary" onClick={backToPreviousPage} size="medium">
+        一覧へ戻る
       </Button>
       <Spacer axis="VERTICAL" size={16} />
     </main>
