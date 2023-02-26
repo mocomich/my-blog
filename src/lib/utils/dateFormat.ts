@@ -1,5 +1,7 @@
-import { format } from "date-fns";
+import { format, utcToZonedTime } from "date-fns-tz";
 
 export const formatDateToYYYYMMDD = (date: string) => {
-  return format(new Date(date), "yyyy-MM-dd");
+  const jstDate = utcToZonedTime(date, "Asia/Tokyo");
+
+  return format(jstDate, "yyyy-MM-dd", { timeZone: "Asia/Tokyo" });
 };
